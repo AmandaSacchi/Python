@@ -1,0 +1,10 @@
+Objeto & Classe
+
+class Cadeira (cor, tamanho): ******* Classe Cadeira
+    self.cor = cor
+    self.tamanho = tamanho
+
+c = Cadeira (azul, grande)   ****** Objeto C
+c.cor = azul
+c.tamanho = grande
+
