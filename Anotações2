@@ -1,0 +1,98 @@
+print("Ola Mundo")
+
+nota1 = float(input(" Qual a 1 nota?  ")) #Float são int decimais
+nota2 = float(input(" Qual a 2 nota?  "))
+nota3 = float(input(" Qual a 3 nota?  "))
+media = (nota1 + nota2 + nota3) / 3.0 #o divisor precisa da virgula porque float é decimal 
+print ("Sua media foi de  {}".format(media))
+if(media >=9):
+    print(" Parabens, sua nota foi muita boa, PASSOU! ")    
+elif(media >=6):
+    print(" Passou :D ")  
+else:
+    print(" Nota abaixo da media, nao passou :C ")
+
+=============================================================================================
+
+print ("Bem Vindo ao conversor de F => C ")
+f =float (input("Digite a temperatura em Fahrenheit:  "))
+c = (f - 32.0) * (5/9)
+if(c>=35):
+    print("Esta muito quente, não esqueça de se hidratar")
+elif(c<35 and c>20):
+    print("Sensaçao termica perfeita, aproveite para ir ao parque")
+else:
+    print("Esta muito frio, leve uma blusa e permaneça embaixo das cobertas")    
+ 
+print ("A temperatura em Celsius eh: {}".format(c) + " Graus")
+
+================================================================================================
+
+def pagamento(q_horas, valor_hora):   # Define uma função / é como se fosse o function do javascript
+    horas = float(q_horas)
+    dinheiro = float(valor_hora)
+    if(horas >= 40):
+        salario = horas * dinheiro
+
+    else:
+        print("Horas não suficientes")   
+
+    return salario    
+salario = pagamento(40, 50)
+print(salario)
+
+===================================================================================================
+#  DETETIVE
+
+print("Detetive")
+print("Responda as perguntas com sinal S(Sim) ou N(Nao) ")
+
+perguntas = ("Voce telefonou para a vitima?",
+            "voce esteve no local do crime?",
+            "Voce era vizinho da vitima?",
+            "Voce tinha crush na vitima?",
+            "Voce devia $$ para a vitima?")
+
+resposta = []
+
+for pergunta in perguntas:
+    resposta.append(input(pergunta).upper()) 
+
+tipo = 0
+
+for respostas in resposta:
+    if respostas == "S":
+        tipo += 1
+    
+if tipo <= 1:
+    print("INOCENTE, pode ir")    
+elif tipo == 2:
+    print("Foi voce nao foi?")
+elif tipo <=3:
+    print("Voce participou do assassinato, nao vai escapar!")
+else:
+    print("ASSASSINXXXXX!!")
+
+=========================================================================================
+def soma(valor1, valor2):
+    return valor1 + valor2
+
+valor1 = int(input("Qual a sua idade?"))
+valor2 = int(input("Qual a sua idade?"))
+print (f"A soma eh {soma(valor1, valor2)}")  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
